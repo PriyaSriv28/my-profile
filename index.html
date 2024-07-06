@@ -9,17 +9,22 @@
 </head>
 <body>
     <header>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="container">
             <div id="logo"></div>
             <h1>Priya Sivastava</h1>
             <p>Web Developer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            
         </div>
     </header>
 
@@ -34,13 +39,15 @@
     <section id="portfolio" class="section">
         <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <h3>To-Do App</h3>
-                <p>A small project showcasing a to-do app where users can add, edit, and delete tasks. Built with HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Backend Project</h3>
-                <p>A backend project using Python and Flask that supports CRUD operations (Create, Read, Update, Delete) with PATCH, POST, GET, and PUT methods.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" onclick="window.open('https://github.com/your-github-repo1', '_blank')">
+                    <h3>To-Do App</h3>
+                    <p>A small project showcasing a to-do app where users can add, edit, and delete tasks. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="portfolio-card" onclick="window.open('https://github.com/your-github-repo2', '_blank')">
+                    <h3>Backend Project</h3>
+                    <p>A backend project using Python and Flask that supports CRUD operations (Create, Read, Update, Delete) with PATCH, POST, GET, and PUT methods.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -48,7 +55,14 @@
     <section id="certifications" class="section">
         <div class="container">
             <h2>Certifications</h2>
-            <p>I am a certified Python developer. This certification validates my expertise and skills in Python programming.</p>
+            <div class="certification-grid">
+                <div class="certification-card" style="background-image: url('certificate.jpg/certificate.jpg');">
+                    
+                </div>
+                <div class="certification-description">
+                    <p>Certified Python Developer: Welcome to my portfolio! I'm a certified Python developer dedicated to crafting efficient, scalable solutions through clean and maintainable code. Whether it's building robust web applications, automating tasks with scripting, or harnessing data for insightful analytics, I thrive on tackling complex challenges and delivering results that exceed expectations. </p>
+                </div>
+            </div>
         </div>
     </section>
 
